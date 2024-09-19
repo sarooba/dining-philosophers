@@ -1,0 +1,39 @@
+int tph, philname[20], status[20], howhung, hu[20], cho; main() 
+{ 
+int i; 
+clrscr(); 
+printf("\n\nDINING PHILOSOPHER PROBLEM"); 
+printf("\nEnter the total no. of philosophers: "); 
+scanf("%d",&tph); 
+for(i=0;i<tph;i++) 
+{ 
+} 
+philname[i] = (i+1); 
+status[i]=1; 
+printf("How many are hungry : "); 
+scanf("%d", &howhung); 
+if(howhung==tph) 
+{ 
+} 
+else 
+printf("\nAll are hungry..\nDead lock stage will occur"); printf("\nExiting.."); 
+{ 
+for(i=0;i<howhung;i++) 
+{ 
+} 
+do 
+{ 
+printf("Enter philosopher %d position: ",(i+1)); scanf("%d", 
+&hu[i]); 
+status[hu[i]]=2; 
+printf("1.One can eat at a time\t2.Two can eat at a time\t3.Exit\nEnter 
+your choice:"); 
+scanf("%d", &cho); 
+switch(cho) 
+{ 
+case 1: one(); 
+break; 
+case 2: two(); 
+break; 
+case 3: exit(0); 
+default: printf("\nInvalid option..");
